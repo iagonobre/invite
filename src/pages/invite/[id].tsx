@@ -7,6 +7,7 @@ import axios from 'axios';
 
 import Lottie from 'react-lottie';
 import animationData from '../../../public/assets/letter.json';
+import { motion } from "framer-motion"
 
 type Student = {
   name: string;
@@ -47,7 +48,12 @@ export default function Home() {
         <Head>
           <title>Uma noite em Hollywood</title>
         </Head>
-        <div className={styles.container}>
+        <motion.div
+          className={styles.container}
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+
+        >
           <div className={styles.radiusContainer}>
             <img className={styles.image} src="/assets/logo.svg" alt="Uma noite em Hollywood - Formatura Meca 2019.1" />
             <div className={styles.line} />
@@ -87,13 +93,21 @@ export default function Home() {
               </Link>
             </footer>
           </div >
-        </div>
+        </motion.div>
       </>
     )
   }
 
   return (
-    <div className={styles.lottieArea}>
+    <motion.div
+      className={styles.lottieArea}
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+    >
+      <Head>
+        <title>Abrir Convite</title>
+      </Head>
       <button className={styles.lottieContainer} onClick={() => setIsPaused(false)}>
         <Lottie
           options={{
@@ -112,6 +126,6 @@ export default function Home() {
         />
       </button>
       <button className={styles.buttonLottie} onClick={() => setIsPaused(false)}>ABRIR CONVITE</button>
-    </div>
+    </motion.div>
   )
 }
