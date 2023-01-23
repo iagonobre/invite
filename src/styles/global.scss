@@ -44,6 +44,16 @@ body::-webkit-scrollbar-thumb {
   --text: #E1D0A7 !important;
 }
 
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #490C11 !important;
+    --gold: #D6B872 !important;
+    --darkGold: #C1A667 !important;
+    --text: #E1D0A7 !important;
+  }
+}
+
 body {
   background: var(--background);
 }
