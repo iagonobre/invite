@@ -1,0 +1,165 @@
+.image {
+  width: 100%;
+}
+
+.radiusContainer {
+  margin: 1rem;
+  border: 2px solid var(--gold);
+  border-radius: 18px;
+  background: var(--background);
+}
+
+.line {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: var(--gold);
+}
+
+.text {
+  margin: 1.6rem 0rem;
+  text-align: center;
+  width: 24rem;
+  font-family: 'Merriweather';
+  font-size: 1.2rem;
+  color: var(--text);
+  letter-spacing: 0.15rem;
+}
+
+.title {
+  font-family: 'Voltdeco2';
+  font-size: 2.4rem;
+  letter-spacing: 0.4rem;
+  max-width: 90%;
+  color: var(--gold);
+  font-weight: 300;
+  text-align: center;
+}
+
+.contentContainer {
+  margin: 2rem 0rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.button {
+  padding: 0.8rem;
+  background-color: var(--gold);
+  border: 2px solid var(--darkGold);
+  border-radius: 8px;
+
+  width: 20rem;
+  font-family: 'Voltaire';
+  letter-spacing: 0.15rem;
+  outline: none;
+  font-size: 1.5rem;
+  color: var(--background)
+}
+
+.scheduleContainer {
+  display: flex;
+  flex-direction: row;
+  height: 7rem;
+  width: 100%;
+
+  p {
+    font-size: 6rem;
+    font-family: 'Voltdeco';
+    color: var(--gold);
+  }
+ 
+}
+
+.scheduleDate {
+  width: 30%;
+  padding-top: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.scheduleInformation {
+  width: 70%;
+  height: 100%;
+  
+  div {
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.2rem;
+    border: 2px solid var(--gold);
+    border-bottom: none;
+    border-right: none;
+  }
+
+  div:first-child {
+    border-top: none;
+  }
+  
+  p {
+    font-size: 2.5rem;
+    letter-spacing: 0.5rem;
+  }
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  margin: 3rem 0rem;
+}
+
+@media (min-width: 600px) {
+  .radiusContainer {
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.25);
+  }
+
+  .container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #240407;
+  }
+
+  .line{
+    position: relative
+  }
+}
+
+.lottieArea {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #240407;
+
+  button:hover {
+    opacity: 100%;
+  }
+}
+
+.buttonLottie {
+  border: 2px solid var(--background);
+  border-radius: 8px;
+  font-family: 'Voltdeco2';
+  color: var(--background);
+  background: var(--gold);
+  font-size: 1.5em;
+  letter-spacing: 0.1rem;
+  width: 12rem;
+  position: absolute;
+  text-align: center;
+  margin-top: 16rem;
+  z-index: 1;
+}
+
+.lottieContainer {
+  height: 50rem;
+  background: none;
+  border: none;
+}
