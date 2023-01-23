@@ -4,7 +4,8 @@ export default function Document() {
   return (
     <Html lang="pt-BR">
       <Head>
-        <meta name="description" content="Descrição" />
+        <meta name="color-scheme" content="light dark" />
+        <meta name="description" content="Você está sendo convidado(a) para um evento inesquecível" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.png" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
