@@ -38,6 +38,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 :root {
+  color-scheme: light;
   --background: #490C11 !important;
   --gold: #D6B872 !important;
   --darkGold: #C1A667 !important;
@@ -47,6 +48,7 @@ body::-webkit-scrollbar-thumb {
 
 @media (prefers-color-scheme: dark) {
   :root {
+    color-scheme: dark;
     --background: #490C11 !important;
     --gold: #D6B872 !important;
     --darkGold: #C1A667 !important;
