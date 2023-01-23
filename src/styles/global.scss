@@ -1,3 +1,7 @@
+:root {
+  color-scheme: dark;
+}
+
 @font-face {
   font-family: "Voltdeco";
   src: url('../styles/fonts/Voltdeco/Voltdeco.otf');
@@ -30,18 +34,18 @@ body::-webkit-scrollbar {
 }
 
 body::-webkit-scrollbar-track {
-  background:  #490C11;
+  background:  #490C11 !important;
 }
 
 body::-webkit-scrollbar-thumb {
-  background-color: #35060a;
+  background-color: #35060a !important;
 }
 
 :root {
-  --background: #490C11;
-  --gold: #D6B872;
-  --darkGold: #C1A667;
-  --text: #E1D0A7;
+  --background: #490C11 !important;
+  --gold: #D6B872 !important;
+  --darkGold: #C1A667 !important;
+  --text: #E1D0A7 !important;
 }
 
 body {
