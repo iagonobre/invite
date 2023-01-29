@@ -60,6 +60,7 @@ export default function Home() {
             <div className={styles.contentContainer}>
               <h3 className={styles.title}>{student.name}</h3>
               <p className={styles.text}>tem a honra de convidar você para celebrar a sua formatura</p>
+              <p className={styles.subtitle}>*tom vermelho exclusivo para os formandos</p>
               <Link href={`https://wa.me/55${student.phone}?text=Confirmo%20a%20minha%20presen%C3%A7a%20na%20formatura!`}>
                 <button className={styles.button}>CONFIRMAR PRESENÇA</button>
               </Link>
